@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szyfr Cezara +3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Szyfr Cezara (Przesunięcie o 5)</h1>
+        
+        <p>Wprowadź tekst do zaszyfrowania lub odszyfrowania:</p>
+        
+        <textarea id="tekstWejsciowy" rows="5" placeholder="Wpisz tutaj swoją wiadomość..."></textarea>
+        
+        <div class="buttons">
+            <button onclick="obsluzOperacje('szyfruj')">Szyfruj (+3)</button>
+            <button onclick="obsluzOperacje('deszyfruj')">Deszyfruj (-3)</button>
+        </div>
+
+        <h2>Wynik:</h2>
+        
+        <textarea id="tekstWyjsciowy" rows="5" readonly placeholder="Wynik operacji pojawi się tutaj..."></textarea>
+
+        <p class="info">Szyfr ignoruje cyfry i znaki specjalne, zmienia tylko litery A-Z.</p>
+    </div>
+
+    <script src="szyfr.js"></script>
+</body>
+</html>
